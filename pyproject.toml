@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitsnn-cpu"
+version = "0.1.0"
+description = "Bit-packed binary SNN inference operators for CPUs"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.3,<2.4",
+    "numpy>=1.26,<2",
+    "ninja>=1.11",
+]
+
+[project.optional-dependencies]
+spikingjelly = [
+    "spikingjelly==0.0.0.0.14",
+    "torchvision>=0.18,<0.19",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
