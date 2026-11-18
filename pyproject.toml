@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "bitsnn-cpu"
 version = "0.1.0"
 description = "Bit-packed binary SNN inference operators for CPUs"
+license = {text = "Apache-2.0"}
 requires-python = ">=3.10"
 dependencies = [
     "torch>=2.3,<2.4",
